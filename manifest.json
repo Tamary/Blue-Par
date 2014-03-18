@@ -1,0 +1,17 @@
+{
+  "name": "blue text",
+  "description": "Makes the paragraph blue on hover",
+  "version": "1.0",
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "content_scripts": [{
+    "matches": ["http://*/*"],
+    "js": ["jquery-1.10.2.min.js","example.js"],
+    "css": ["blue.css"]
+  }],
+
+  "manifest_version": 2
+}
